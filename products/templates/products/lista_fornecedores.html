@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Fornecedores</title>
+</head>
+<body>
+    <h1>Lista de Fornecedores</h1>
+    <ul>
+        {% for fornecedor in fornecedores %}
+            <li>{{ fornecedor.nome }} - {{ fornecedor.email }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/produtos/">Ver Produtos</a> | <a href="/categorias/">Ver Categorias</a>
+</body>
+</html>
